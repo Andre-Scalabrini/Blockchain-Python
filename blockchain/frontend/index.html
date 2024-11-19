@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Web Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain Web Interface</h1>
+
+        <div class="section">
+            <h2>Blocos</h2>
+            <button onclick="getBlocks()">Ver Blocos</button>
+            <pre id="blocks"></pre>
+        </div>
+
+        <div class="section">
+            <h2>Cadastrar Novo Bloco</h2>
+            <input type="text" id="blockData" placeholder="Digite os dados do bloco">
+            <button onclick="registerBlock()">Registrar Bloco</button>
+        </div>
+
+        <div class="section">
+            <h2>Auditoria da Blockchain</h2>
+            <button onclick="auditChain()">Auditar Blockchain</button>
+            <pre id="auditResult"></pre>
+        </div>
+
+        <div class="section">
+            <h2>Sincronizar Blockchain</h2>
+            <button onclick="synchronizeChain()">Sincronizar com Peers</button>
+        </div>
+        
+        <div class="section">
+            <h2>Registrar Peer</h2>
+            <input type="text" id="peerAddress" placeholder="Digite o endereço do peer">
+            <button onclick="registerPeer()">Registrar Peer</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
